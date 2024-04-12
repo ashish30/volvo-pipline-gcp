@@ -1,6 +1,6 @@
 resource "google_storage_bucket" "my-gcpbucket" {
   name          = "tf-github-bucket"
-  project       = "gcp-terraform"
+  project       = "mygcp-ap"
   location      = "US"
   force_destroy = true
 
