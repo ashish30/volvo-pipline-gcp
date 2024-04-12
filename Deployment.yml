@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myphp-clone-deployment
+  labels:
+    app: myphp-clone
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: myphp-clone
+  template:
+    metadata:
+      labels:
+        app: myphp-clone
+    spec:
+      containers:
+      - name: myphp-clone
+        image: ashishpathak1990/myphp
+        ports:
+        - containerPort: 3000
