@@ -1,5 +1,5 @@
 resource "google_storage_bucket" "my-gcpbucket" {
-  name          = "tf-github-bucket-new"
+  name          = "tf-github-bucket-newb"
   project       = "mygcp-ap"
   location      = "US"
   force_destroy = true
