@@ -38,7 +38,7 @@ jobs:
     - name: Terraform Format
       run: terraform fmt -check
       env:
-          GOOGLE_CREDENTIALS: ${{ secret.GCP_SA_KEY }}
+          GOOGLE_CREDENTIALS: ${{ secrets.GCP_SA_KEY }}
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
