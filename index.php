@@ -6,7 +6,7 @@
     <title>Welcome to 2022</title>
 </head>
 <body>
-    <h1>Welcome to 2022</h1>
+    <h2>Welcome to 2022</h2>
     <?php
         // Get user agent informations
         
