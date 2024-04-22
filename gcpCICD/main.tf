@@ -6,3 +6,11 @@ resource "google_storage_bucket" "my-gcpbucket" {
 
   public_access_prevention = "enforced"
 }
+terraform {
+  required_providers {
+    google = {
+      source = "hashicorp/google"
+      version = "5.23.0"
+    }
+  }
+}
