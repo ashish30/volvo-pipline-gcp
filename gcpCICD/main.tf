@@ -9,8 +9,8 @@ resource "google_storage_bucket" "my-gcpbucket" {
 terraform {
   required_providers {
     google = {
-      source = "hashicorp/google"
-      version = "5.23.0"
+      source  = "hashicorp/google"
+      version = "<4.45.0"
     }
   }
 }
