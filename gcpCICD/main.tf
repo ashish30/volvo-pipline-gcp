@@ -6,6 +6,7 @@ resource "google_storage_bucket" "my-gcpbucket" {
 
   public_access_prevention = "enforced"
 }
+##updated
 terraform {
   required_providers {
     google = {
