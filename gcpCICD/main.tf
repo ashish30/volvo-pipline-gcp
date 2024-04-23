@@ -9,7 +9,7 @@ resource "google_storage_bucket" "my-gcpbucket" {
 ##updated
 terraform {
   required_providers {
-    google = {
+    gcp = {
       source  = "hashicorp/google"
       version = ">= 4.44.1"
     }
