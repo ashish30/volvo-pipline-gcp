@@ -1,17 +1,17 @@
 resource "google_storage_bucket" "my-gcpbucket" {
-  name          = "tf-github-bucket-newb"
+  name          = "tf-github-bucket-demo"
   project       = "mygcp-ap"
   location      = "US"
   force_destroy = true
 
   public_access_prevention = "enforced"
 }
-
+##updated
 terraform {
   required_providers {
-    gcp = {
+    google = {
       source  = "hashicorp/google"
-      version = ">= 4.44.1"
+      version = "<4.45.0"
     }
   }
 }
