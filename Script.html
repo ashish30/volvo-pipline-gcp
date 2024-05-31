@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Position Logger</title>
+</head>
+<body>
+    <h1>Mouse Position Logger</h1>
+    <p>Move your mouse around and the position will be logged every 5 seconds.</p>
+
+    <script>
+        let mouseX = 0;
+        let mouseY = 0;
+
+        // Event listener to track mouse movement
+        document.addEventListener('mousemove', (event) => {
+            mouseX = event.clientX;
+            mouseY = event.clientY;
+        });
+
+        // Function to log mouse position
+        function logMousePosition() {
+            console.log(`Mouse Position - X: ${mouseX}, Y: ${mouseY}`);
+        }
+
+        // Set interval to log mouse position every 5 seconds
+        setInterval(logMousePosition, 5000);
+    </script>
+</body>
+</html>
